@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/submitreq.css">
+    <title>Submit Request</title>
+</head>
+<body>
+    <div class="container">
+        <div id="h1">
+            <h1>SUBMIT REQUEST</h1>
+        </div>
+        <div id="rap">
+            <form action="#" id="myForm" method="get">
+                <div class="username" id="common">
+                    <label for="">First Name</label><br>
+                    <input type="text" name="text" id="" placeholder="First name">
+                    <img src="/IMAGES/user.png" alt="">
+                </div>
+                <div class="username" id="common">
+                    <label for="">Last Name</label><br>
+                    <input type="text" name="text" id="" placeholder="Last name">
+                    <img src="/IMAGES/user.png" alt="">
+                </div>
+                <div class="username" id="common">
+                    <label for="">Email Id</label><br>
+                    <input type="email" name="email" id="" placeholder="Mail Id">
+                    <img src="/IMAGES/envelope.png" alt="">
+                </div>
+                <div class="username" id="common">
+                    <label for="">Mobile Number</label><br>
+                    <input type="tel" name="mobile" id="" pattern="[0-9]{10}" placeholder="Mobile Number" class="tel">
+                    <img src="/IMAGES/phone-call.png" alt="">
+                </div>
+                <div class="username" id="common">
+                    <label for="">Subject</label><br>
+                    <input type="text" name="mobile" id="" placeholder="Enter the Subject">
+                    <img src="/IMAGES/search.png" alt="">
+                </div>
+                <div class="feedback-container" id="common">
+                    <label for="">Message</label><br>
+                    <textarea class="feedback" placeholder="Enter your message" name="feedback"></textarea>
+                </div>
+
+                <div id="submit">
+                    <a href="#" id="submitButton" style="text-decoration: none; color: white;">
+                        <h2>SUBMIT</h2>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    alert("Request Submitted successfully!");
+
+    document.getElementById('profileForm').submit();
+});
+    </script>
+</body>
+</html>

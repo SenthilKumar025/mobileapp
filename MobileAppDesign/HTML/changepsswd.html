@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/changepssed.css">
+    <title>Change Password</title>
+</head>
+<body>
+    <div class="container">
+        <div id="h1">
+            <h1>CHANGE PASSWORD</h1>
+        </div>
+        <div id="rap">
+            <form action="" method="post">
+                <div class="username" id="common">
+                    <input type="password" name="psswd" id="" placeholder="Enter Old Password">
+                    <img src="/IMAGES/lock.png" alt="">
+                </div>
+                <div class="username" id="common">
+                    <input type="password" name="psswd" id="" placeholder="Enter New Password">
+                    <img src="/IMAGES/lock.png" alt="">
+                </div>
+                <div class="username" id="common">
+                    <input type="password" name="psswd" id="" placeholder="Confirm Password">
+                    <img src="/IMAGES/lock.png" alt="">
+                </div>
+
+                <div id="submit">
+                    <a href="" id="changepsswd" style="text-decoration: none; color: white;"><h2>SUBMIT</h2></a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('changepsswd').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    alert("Password Changed Successfully");
+
+    document.getElementById('profileForm').submit();
+});
+    </script>
+</body>
+</html>
